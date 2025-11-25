@@ -1,11 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FormLogin from './components/FomLogin';
+import { Routes, Route } from 'react-router-dom'; // <--- Importe as rotas
+
+import Login from './pages/FomLogin'; 
+import AlunoDashboard from './pages/AlunoDashboard';
 
 function App() {
   return (
-    <>
-      <FormLogin />
-    </>
+    <Routes>
+      {/* Caminho "/" (Raiz) -> Mostra Login */}
+      <Route path="/" element={<Login />} />
+
+      {/* Caminho "/aluno" -> Mostra Dashboard */}
+      <Route path="/aluno" element={<AlunoDashboard />} />
+    </Routes>
   );
 }
 

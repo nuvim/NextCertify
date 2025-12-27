@@ -17,6 +17,11 @@ import EditarPerfil from './pages/EditarPerfil';
 import HomeBolsista from './pages/HomeBolsista';
 import RegistroAluno from './pages/RegistroAluno';
 
+import HomeTutor from './pages/HomeTutor';
+import AlunosTutor from './pages/AlunosTutor';
+import FormsTutor from './pages/FormsTutor';
+import RelatoriosTutor from './pages/RelatoriosTutor';
+
 function App() {
   return (
     <Routes>
@@ -33,6 +38,12 @@ function App() {
       <Route path="/meus-certificados" element={<MeusCertificados />} />
       <Route path="/avaliacao-tutoria" element={<AvaliacaoTutoria />} />
       <Route path="/editar-perfil" element={<EditarPerfil />} />
+
+      <Route path="/home-tutor" element={<HomeTutor />} />
+      <Route path="/alunos-tutor" element={<AlunosTutor />} />
+      <Route path="/forms-tutor" element={<FormsTutor />} />
+      <Route path="/relatorios-tutor" element={<RelatoriosTutor />} />
+
     </Routes>
   );
 }
